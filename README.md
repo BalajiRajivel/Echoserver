@@ -48,6 +48,11 @@ c.send(msg.encode())
 ```
 
 ## OUTPUT:
+### CLIENT
+https://user-images.githubusercontent.com/91368803/262947204-0ceafa68-0984-4b8e-80cd-465a4670f6c3.png
+
+### SERVER
+https://user-images.githubusercontent.com/91368803/262946970-3e9d32f0-8bf6-4c64-aec1-bedf9ca9d096.png
 
 ## RESULT:
 The program is executed successfully

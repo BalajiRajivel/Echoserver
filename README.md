@@ -21,7 +21,7 @@ Testing the server and client
 
 ## PROGRAM:
 ### CLIENT
-```
+```py
 import socket
 
 s=socket.socket()
@@ -30,6 +30,21 @@ while(1):
 msg=input("Client>")
 s.send(msg.encode())
 print("Server>"+s.recv(1024).decode())
+```
+
+### SERVER
+```py
+import socket
+
+s=socket.socket()
+s.bind(('localhost',65124))
+s.listen(5)
+c,addr=s.accept()
+
+while(1):
+msg=c.recv(1024).decode()
+print(msg)
+c.send(msg.encode())
 ```
 
 ## OUTPUT:

@@ -20,6 +20,17 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
+### CLIENT
+```
+import socket
+
+s=socket.socket()
+s.connect(('localhost',65124))
+while(1):
+msg=input("Client>")
+s.send(msg.encode())
+print("Server>"+s.recv(1024).decode())
+```
 
 ## OUTPUT:
 
